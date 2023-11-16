@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 420px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 25px 25px;
+    transition-duration: 0.5s;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 14px;
+    min-width: 160px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button:hover {
+    opacity: 0.95;
+}
+
+.search button img {
+    width: 15px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.col img {
+    width: 30px;
+}
+
+.humidity, .wind {
+    font-size: 20px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media (min-width: 600px) {
+
+    .search button img {
+        width: 20px;
+    }
+
+    .details {
+        padding: 0 20px;
+        margin-top: 20px;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .col {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .col img {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .humidity, .wind {
+        font-size: 24px;
+    }
+}
